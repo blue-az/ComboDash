@@ -30,7 +30,7 @@ def load_and_merge_data():
 st.title("ComboDash Streamlit App")
 
 if 'data' not in st.session_state:
-    st.session_state.data = load_data()
+    st.session_state.data = load_and_merge_data()
 
 # Data loaded
 merged_df = st.session_state.data
